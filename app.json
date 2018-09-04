@@ -12,8 +12,8 @@
       "description": "Comma-separated list of hosts",
       "value": ".herokuapp.com"
     },
-    "DJANGO_AWS_ACCESS_KEY_ID": "AKIAJDIF2QWKPC2HVVHQ",
-    "DJANGO_AWS_SECRET_ACCESS_KEY": "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",
+    "DJANGO_AWS_ACCESS_KEY_ID": "",
+    "DJANGO_AWS_SECRET_ACCESS_KEY": "",
     "DJANGO_AWS_STORAGE_BUCKET_NAME": "outset-files"
   },
   "scripts": {
