@@ -21,7 +21,7 @@ USE_SSL = True
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
 # Note: This key only used for development and testing.
-SECRET_KEY = env("DJANGO_SECRET_KEY", default='mf$7%jj!$ugv0bdj(=q9a*=21%i^mrn3=5dpy$%n1axt6%5hls')
+SECRET_KEY = env("DJANGO_SECRET_KEY", default='')
 
 ALLOWED_HOSTS = ('app.outset.vc', 'www.app.outset.vc')
 
@@ -30,7 +30,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'outset',
         'USER': 'outset',
-        'PASSWORD': '7zFJ7zZGsPuwqyuGtXdH',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -48,8 +48,8 @@ MEDIA_ROOT = STATIC_ROOT + '/media'
 DEFAULT_FROM_EMAIL = 'hello@outset.vc'
 SERVER_EMAIL = 'hello@outset.vc'
 EMAIL_BACKEND = 'django_ses.SESBackend'
-AWS_ACCESS_KEY_ID = 'AKIAJUKD5S56WXAOEPFA'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = ''
+AWS_SECRET_ACCESS_KEY = ''
 AWS_SES_REGION_NAME = 'us-west-2'
 
 
@@ -164,7 +164,7 @@ SWAGGER_SETTINGS = {
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#admins
 ADMINS = (
-    ('Alexander Lupandin', 'alexandr.l@cronix.ms'),
+    (),
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#managers
@@ -175,5 +175,5 @@ INTERNAL_API_ALLOW_HOSTS = ['localhost', '127.0.0.1', '52.25.47.9', 'app.outset.
 INTERNAL_API_ALLOW_ALL = False
 
 # API KEYS
-PRIVATE_STRIPE_API_KEY = 'sk_live_jeukqZcLAZF6hVqsQ5HyR8is'
-PUBLIC_STRIPE_API_KEY = 'pk_live_b8R0tK8LTNrhTvA6IFtSlobo'
+PRIVATE_STRIPE_API_KEY = ''
+PUBLIC_STRIPE_API_KEY = ''
