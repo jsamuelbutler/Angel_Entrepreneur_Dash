@@ -116,7 +116,7 @@ EMAIL_BACKEND = env('DJANGO_EMAIL_BACKEND', default='django.core.mail.backends.s
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#admins
 ADMINS = (
-    ("""Alex Vykaliuk""", 'alex.vykaliuk@toptal.com'),
+    (),
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#managers
@@ -130,7 +130,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'outset_local',
         'USER': 'outset',
-        'PASSWORD': '8EkT8b9e',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -243,16 +243,16 @@ REST_SOCIAL_OAUTH_REDIRECT_URI = '/loginSocial'
 SOCIAL_AUTH_USER_FIELDS = ['email', 'first_name', 'last_name']
 
 # Google
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '892308907618-st5nqnv00h9t8qm1hm9vu5o6v1q29lc1.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'Nc-LtcbLthRksNcry5xNsrxy'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = ''
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = ''
 SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = ['email']
 
 # ANGEL_API_URL = 'https://api.angel.co/1/'
 # SOCIAL_AUTH_ANGEL_AUTH_EXTRA_ARGUMENTS = {'scope': 'email'}
 
 # LinkedIn
-SOCIAL_AUTH_LINKEDIN_OAUTH2_KEY = '77ya8w75m0ew32'
-SOCIAL_AUTH_LINKEDIN_OAUTH2_SECRET = 'FpUkHH51xHXYol5T'
+SOCIAL_AUTH_LINKEDIN_OAUTH2_KEY = ''
+SOCIAL_AUTH_LINKEDIN_OAUTH2_SECRET = ''
 SOCIAL_AUTH_LINKEDIN_OAUTH2_SCOPE = ['r_basicprofile', 'r_emailaddress']
 SOCIAL_AUTH_LINKEDIN_OAUTH2_FIELD_SELECTORS = [
     'picture-url',
@@ -459,8 +459,8 @@ REST_FRAMEWORK = {
 #DBBACKUP
 DBBACKUP_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 DBBACKUP_STORAGE_OPTIONS = {
-    'access_key': 'AKIAIXNVRDSSXJDQ5ZBQ',
-    'secret_key': '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',
+    'access_key': '',
+    'secret_key': '',
     'bucket_name': 'outset-backups'
 }
 
@@ -485,19 +485,19 @@ CORS_ALLOW_HEADERS = (
 FORCE_LOWERCASE_TAGS = True
 
 # API KEYS
-PRIVATE_STRIPE_API_KEY = 'pk_test_ptVPljhiZ5o2riTQpCQqrWKY'
-PUBLIC_STRIPE_API_KEY = 'sk_test_RvfUBq4l6cANH1JWcUEU6Xxx'
+PRIVATE_STRIPE_API_KEY = ''
+PUBLIC_STRIPE_API_KEY = ''
 
-STRIPE_CLIENT_ID = 'ca_9xcdfmRQXWYGJqARpKtUvpzpKfBJYO56'
+STRIPE_CLIENT_ID = ''
 STRIPE_REDIRECT_URL = '/accessStripe'
 STRIPE_SCOPE = 'read_only'
-XERO_CUSTOMER_KEY = 'ZHYWNEAV82BVEP1JHSPLKV4P5J5X84'
-XERO_CUSTOMER_SECRET = 'SQ8BSFD1AFMLV0BKHGPOZ1OK4QFGJH'
+XERO_CUSTOMER_KEY = ''
+XERO_CUSTOMER_SECRET = ''
 XERO_REDIRECT_TO = '/accessXero/{}'
 XERO_USER_AGENT = 'Outset'
-FINICITY_PARTNER_ID = '2445581806937'
-FINICITY_PARTNER_SECRET = '6zeltIhce76JXSaLws7P'
-FINICITY_APP_KEY = '208bb4232945f327eaacafdb7c390565'
+FINICITY_PARTNER_ID = ''
+FINICITY_PARTNER_SECRET = ''
+FINICITY_APP_KEY = ''
 
 
 # rest_cache
@@ -506,8 +506,8 @@ REST_DEFAULT_CACHE_BY_PATH = True
 
 
 # notes_and_docs
-NAD_S3_ACCESS_KEY = 'AKIAJUKD5S56WXAOEPFA'
-NAD_S3_SECRET_KEY = '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'
+NAD_S3_ACCESS_KEY = ''
+NAD_S3_SECRET_KEY = ''
 NAD_S3_BUCKET_NAME = 'outset-docs-master'
 # oauth2client.contrib.django_util
 GOOGLE_OAUTH2_CLIENT_ID = SOCIAL_AUTH_GOOGLE_OAUTH2_KEY
