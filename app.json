@@ -1,0 +1,26 @@
+{
+  "name": "outset",
+  "description": "Quantifying Pre Revenue Startups",
+  "env": {
+    "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-python",
+    "DJANGO_SETTINGS_MODULE": "config.settings.production",
+    "DJANGO_SECRET_KEY": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+    "DJANGO_ALLOWED_HOSTS": {
+      "description": "Comma-separated list of hosts",
+      "value": ".herokuapp.com"
+    },
+    "DJANGO_AWS_ACCESS_KEY_ID": "AKIAJDIF2QWKPC2HVVHQ",
+    "DJANGO_AWS_SECRET_ACCESS_KEY": "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",
+    "DJANGO_AWS_STORAGE_BUCKET_NAME": "outset-files"
+  },
+  "scripts": {
+    "postdeploy": "python manage.py migrate"
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "heroku-redis:hobby-dev"
+  ]
+}
