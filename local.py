@@ -19,7 +19,7 @@ TEMPLATES[0]['OPTIONS']['debug'] = DEBUG
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
 # Note: This key only used for development and testing.
-SECRET_KEY = env("DJANGO_SECRET_KEY", default='17WW$:_g>)GRNs-qcGxyh?}dB.Z(kN(a-re$f^gvNCj3_NuR{F')
+SECRET_KEY = env("DJANGO_SECRET_KEY", default='')
 
 # Mail settings
 # ------------------------------------------------------------------------------
@@ -76,6 +76,6 @@ SWAGGER_SETTINGS = {
 }
 
 # API KEYS
-PRIVATE_STRIPE_API_KEY = 'sk_test_2KvsXP0heDIXnWalidkqBgTm'
-PUBLIC_STRIPE_API_KEY = 'pk_test_AJu8FWxllMoIGjzN8hBoF6B4'
+PRIVATE_STRIPE_API_KEY = ''
+PUBLIC_STRIPE_API_KEY = ''
 
